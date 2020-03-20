@@ -1,6 +1,7 @@
 <?php
     
     include("includes/classes/Account.php");
+    include("includes/classes/Constants.php");
     $account= new Account();
     
     
@@ -39,23 +40,26 @@
         <form id="loginForm" action="login.php" method="POST">
             <h2>Login to your account</h2>
             <p>
-                <?php echo $account->getError("your username must be between 6 and 25");?>
+                <?php echo $account->getError(Constants::$userNameCharacters);?>
                 <label for="username">Username</label>
                 <input id="username" type="text" name="username" id="" placeholder="username" required>
 
             </p>
             <p>
-                <?php echo $account->getError("your firstname must be between 3 and 25");?>
+                <?php echo $account->getError(Constants::$firstNameCharacters);?>
                 <label for="firstname">firstname</label>
                 <input id="firstname" type="text" name="firstname" id="" placeholder="firstname" required>
 
             </p>
             <p>
+            <?php echo $account->getError(Constants::$lastNameCharacters);?>
                 <label for="lastname">lastname</label>
                 <input id="lastname" type="text" name="lastname" id="" placeholder="lastname" required>
 
             </p>
             <p>
+            <?php echo $account->getError(Constants::$emailInvalid);?>
+            <?php echo $account->getError(Constants::$emailDoNoMatch);?>
                 <label for="email">email</label>
                 <input id="email" type="email" name="email" id="" placeholder="email" required>
 
@@ -66,6 +70,9 @@
 
             </p>
             <p>
+            <?php echo $account->getError(Constants::$passwordsDoNoMatch);?>
+            <?php echo $account->getError(Constants::$passwordNotAlphanumeric);?>
+            <?php echo $account->getError(Constants::$passwordsCharacters);?>
                 <label for="password">Password</label>
                 <input id="password" type="password" name="password" id="" required>
 
