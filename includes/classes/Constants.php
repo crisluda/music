@@ -8,6 +8,14 @@ class Constants{
     public static $lastNameCharacters="your lastname must be between 3 and 25";
     public static $firstNameCharacters="your firstname must be between 3 and 25";
     public static $userNameCharacters="your username must be between 6 and 25";
+    public static $usernameTaken="your username is taken";
+    public static $emailTaken="your email is taken";
+
+    public static $loginFailed="your username or password is incorrect";
+
+
+
+    
 }
 
 
