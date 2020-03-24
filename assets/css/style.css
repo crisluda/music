@@ -1,0 +1,186 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#nowPlayingBarContainer {
+    width: 100%;
+    background-color: #282828;
+    bottom: 0;
+    position: fixed;
+    min-width: 620px;
+
+}
+
+#nowPlayingBar {
+    display: flex;
+    height: 90px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+
+#nowPlayingLeft,
+#nowPlayingRight {
+    width: 30%;
+    min-width: 180px;
+}
+
+#nowPlayingCenter {
+    width: 40%;
+    max-width: 700px;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nowPlayingBarContainer .content {
+    width: 100%;
+    height: 57px;
+}
+
+.playerControls .buttons {
+    margin: 0 auto;
+    display: table;
+}
+
+.controlButton {
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+}
+
+.controlButton:hover {
+    cursor: pointer;
+}
+
+.controlButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.controlButton.pause img {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.controlButton.play img {
+    width: 40px;
+    height: 40px;
+}
+
+.proggressTime {
+    color: #2195F3;
+    font-size: 11px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.playbackBar {
+    display: flex;
+}
+
+.progressBar {
+    width: 100%;
+    height: 12px;
+    display: inline-flex;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.progressBarBg {
+    background-color: #404040;
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.progress {
+    background-color: #2195F3;
+    height: 4px;
+    width: 0;
+    border-radius: 4px;
+}
+
+#nowPlayingLeft .albumartwork {
+    height: 100%;
+    margin-right: 15px;
+    max-width: 57px;
+    float: left;
+    background-size: cover;
+
+}
+
+#nowPlayingLeft .trackinfo {
+    display: table;
+}
+
+#nowPlayingLeft .trackinfo .trackName {
+    margin: 6px 0;
+    display: inline-block;
+    width: 100%;
+    color: #2195F3;
+}
+
+#nowPlayingLeft .trackinfo .artistName {
+    font-size: 12px;
+    color: #2195F3;
+}
+
+#nowPlayingLeft .trackinfo .artistName span,
+#nowPlayingLeft .trackinfo .trackName span {
+    color: #2195F3;
+}
+
+.volumeBar {
+    width: 180px;
+    position: absolute;
+    right: 0;
+}
+
+.volumeBar .progressBar {
+    width: 125px;
+}
+
+#nowPlayingRight {
+    position: relative;
+    margin-top: 16px;
+    padding-top: 6px;
+}
+
+#nowPlayingRight .volumeBar .controlButton img {
+    margin-top: ;
+}
+
+#topContainer {
+    min-width: 100%;
+    width: 100%;
+}
+
+#navBarContainer {
+    background-color: #000;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.navBar {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.logo img {
+    width: 50px;
+}
