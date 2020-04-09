@@ -3,11 +3,19 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
+
 }
 
 * {
     font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
     color: #fff;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #181818;
+    font-size: 14px;
+    min-width: 720px;
 }
 
 #nowPlayingBarContainer {
@@ -67,7 +75,7 @@ body {
 }
 
 .controlButton.pause img {
-    display: none;
+    /* display: none; */
     width: 40px;
     height: 40px;
 }
@@ -157,7 +165,7 @@ body {
 }
 
 #nowPlayingRight .volumeBar .controlButton img {
-    margin-top: ;
+    margin-top: 0;
 }
 
 #topContainer {
@@ -183,4 +191,190 @@ body {
 
 .logo img {
     width: 50px;
+    margin-bottom: 10px;
+}
+
+.navBar .group {
+    border-top: 1px solid #a0a0a0;
+    padding: 10px 0;
+}
+
+.navItem {
+    padding: 10px 0;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700px;
+    display: block;
+    position: relative;
+}
+
+.navItemLink {
+    color: #a0a0a0;
+    text-decoration: none;
+
+}
+
+.navItemLink:hover {
+    color: #2195F3;
+
+}
+
+.navItem .icon {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+
+}
+
+#mainViewContainer {
+    margin-left: 20%;
+    padding-bottom: 90px;
+    width: calc(100%-220px);
+}
+
+#mainContent {
+    padding: 0 20px;
+}
+
+.pageheadingBig {
+    padding: 20px;
+    text-align: center;
+}
+
+.gridViewItem {
+    display: inline-block;
+    margin-right: 20px;
+    width: 29%;
+    max-width: 200px;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.gridViewItem img {
+    width: 100%;
+}
+
+.gridViewIfo {
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.gridViewItem a {
+    text-decoration: none;
+}
+
+.entityIfo {
+    padding: 40px 0 10px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.entityIfo .leftSection {
+    width: 30%;
+    float: left;
+    max-width: 200px;
+}
+
+.entityIfo .leftSection img {
+    width: 100%;
+}
+
+.entityIfo .rightsection {
+    width: 70%;
+    float: left;
+    padding: 5px 10px 5px 40px;
+    box-sizing: border-box;
+}
+
+.entityIfo .rightsection h2 {
+    margin-top: 0px;
+}
+
+.entityIfo .rightsection p {
+    color: #939393;
+    font-weight: 200;
+}
+
+.trackList {
+    padding: 0;
+}
+
+.trackListRow {
+    height: 40px;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+.trackListRow span {
+    color: #939393;
+    font-weight: 200;
+}
+
+.trackListRow:hover {
+    background: #282828;
+}
+
+.trackListRow .trackCount {
+    width: 8%;
+    float: left;
+}
+
+.trackListRow .trackCount img {
+    width: 20px;
+    visibility: hidden;
+    position: absolute;
+    cursor: pointer;
+}
+
+.trackListRow:hover .trackCount img {
+    visibility: visible;
+}
+
+.trackListRow .trackCount span {
+    visibility: visible;
+}
+
+.trackListRow:hover .trackCount span {
+    visibility: hidden;
+}
+
+.trackListRow .trackInfo {
+    width: 75%;
+    float: left;
+}
+
+.trackListRow .trackInfo span {
+    display: block;
+}
+
+.trackListRow .trackOptions {
+    width: 5%;
+    float: left;
+    text-align: right;
+}
+
+.trackListRow .trackOptions img {
+    width: 15px;
+    visibility: hidden;
+}
+
+.trackListRow:hover .trackOptions img {
+    visibility: visible;
+}
+
+.trackListRow .trackDuration {
+    width: 12%;
+    float: left;
+    text-align: right;
+}
+
+.trackListRow .trackInfo .trackName {
+    color: #fff;
+    margin-bottom: 7px;
 }
