@@ -143,7 +143,7 @@
                     <li><img src="https://img.icons8.com/officexs/20/000000/checkmark.png" /> Create your own playlists
                     </li>
                     <li><img src="https://img.icons8.com/officexs/20/000000/checkmark.png" /> follow your artists and
-                        keep up to date</li>
+                        keep up to date.</li>
                 </ul>
             </div>
         </div>
